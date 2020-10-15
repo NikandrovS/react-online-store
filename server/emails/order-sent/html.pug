@@ -1,0 +1,32 @@
+doctype html
+html
+    head
+        meta(charset="utf8")
+        title TOP LINE
+        link(rel="stylesheet", href="css/app.css", data-inline)
+    body
+        div.email
+            p.greeting Здравствуйте!
+            case delivery
+                when "DostavkaClub"
+                    p.mail-body Ваш заказ №#{order} был передан в службу доставки #{delivery}
+                    p.mail-body Отследить его вы можете на сайте&nbsp;
+                        a(href=`${link}?orderno=%23${track}` target="blank") dostavka-club.ru/status
+                        span  с помощью номера заказа: ##{track}
+                when "CDEK"
+                    p.mail-body Ваш заказ №#{order} был передан в службу доставки #{delivery}
+                    p.mail-body Отследить его вы можете на сайте&nbsp;
+                        a(href=`${link}` target="blank") #{link}
+                        span  с помощью трекномера: #{track}
+                when "Почта"
+                    p.mail-body Ваш заказ №#{order} был передан в службу доставки #{delivery}
+                    p.mail-body Отследить его вы можете на сайте&nbsp;
+                        a(href=`${link}#${track}` target="blank") #{link}
+                        span  с помощью трекномера: ##{track}
+                when "Самовывоз"
+                    p.mail-body Ваш заказ №#{order} был доставлен в офлайн магазин для примерки.
+                    p.mail-body Мы отложили его для вас на три дня.
+                    p.mail-body Магазин работает каждый день с 11:00 до 22:00.
+                    p.mail-body Адрес магазина: СПб, ул. Савушкина д.126, 2 этаж, секция В6
+
+            p.warning Пожалуйста не отвечайте на это сообщение, так как оно было сгенерировано автоматически

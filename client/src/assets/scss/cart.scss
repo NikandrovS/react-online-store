@@ -1,0 +1,126 @@
+@import "userForm";
+
+.cart-container {
+  .cart-body {
+    width: inherit;
+  }
+  .title {
+    width: inherit;
+  }
+  .cart-head, .emptyCart {
+    margin-top: 40px;
+  }
+  .emptyCart {
+    height: 399px;
+    text-align: center;
+  }
+  .cart-head, .title, .calculation-title {
+    display: flex;
+    justify-content: space-between;
+  }
+  .head-tag {
+    font-size: 20px;
+  }
+  .clearButton {
+    font-size: 14px;
+    color: #ababab;
+    cursor: pointer;
+    margin: 0;
+    align-self: center;
+    border-bottom: 1px solid transparent;
+  }
+  .clearButton:hover {
+    border-bottom: 1px solid grey;
+  }
+  .title p {
+    font-size: 14px;
+  }
+  .calculation-title {
+    width: 420px;
+    margin-right: 35px;
+    justify-content: space-around;
+  }
+  .estimation-wrapper {
+    width: inherit;
+    font-size: 14px;
+  }
+  .product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ececec;
+  }
+  .product:first-child {
+    border-top: 1px solid #ececec;
+  }
+  .preview {
+    display: flex;
+  }
+  .preview img {
+    height: 100px;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    p {
+      margin: 3px 15px;
+    }
+  }
+  .calculation {
+    display: flex;
+    width: 40%;
+    justify-content: space-between;
+    button {
+      outline: none;
+      border: none;
+      background: transparent;
+      padding: 0;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  .count {
+    display: flex;
+    width: 70px;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 35px;
+    border-bottom: 1px solid black;
+    p {
+      width: 40px;
+      text-align: center;
+    }
+  }
+  .summ {
+    width: 100px;
+    text-align: right;
+  }
+  .removeButton {
+    align-self: center;
+  }
+  .submit {
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+  }
+  .total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    border-bottom: 1px solid #ececec;
+    margin-bottom: 20px;
+  }
+  .submitButton {
+    align-self: center;
+    border: none;
+    background: black;
+    color: white;
+    padding: 20px 20px;
+    margin-bottom: 15px;
+    width: 100%;
+  }
+}

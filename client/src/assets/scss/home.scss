@@ -1,0 +1,100 @@
+.home-container {
+  .link span:hover {
+    color: #845736;
+  }
+  section {
+    width: inherit;
+    .head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 40px 0;
+    }
+    .head h3{
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 3px;
+    }
+    .head a{
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: #373737;
+      text-decoration: none;
+    }
+  }
+  .trendingItems {
+    h3{
+      font-family: Arial,sans-serif;
+    }
+    .body {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      min-height: 1000px;
+      a {
+        text-decoration: none;
+        color: black;
+        letter-spacing: 1px;
+      }
+      .link, span {
+        font-size: 12px;
+      }
+    }
+    .item {
+      margin-bottom: 30px;
+    }
+    img {
+      width: 330px;
+    }
+  }
+  article {
+    margin: 60px 0 30px 0;
+    img {
+      width: 1050px;
+    }
+  }
+
+  .about-us {
+    height: 543px;
+    width: inherit;
+    background-size: cover;
+    .wrapper {
+      width: 0;
+      height: 0;
+      border-bottom: 543px solid rgba(255, 255, 255, 0.8);
+      border-right: 700px solid transparent;
+      position: relative;
+    }
+    .content {
+      position: absolute;
+      top: 0;
+      width: 400px;
+      padding: 240px 50px 0;
+
+    }
+    h3 {
+      margin: 0;
+      width: 300px;
+      font-size: 35px;
+    }
+    p {
+      font-size: 15px;
+      margin: 20px 0;
+    }
+    a {
+      text-decoration: none;
+      font-size: 12px;
+      letter-spacing: 1px;
+      color: black;
+    }
+  }
+  .instagram {
+    img {
+      width: 250px;
+    }
+    .container {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}

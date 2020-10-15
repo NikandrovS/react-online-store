@@ -1,0 +1,43 @@
+.login-body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  width: 300px;
+  font-family: ProbaPro, sans-serif;
+  padding-top: 80px;
+  .logo {
+    font-family: "EuroStileExtended", sans-serif;
+    font-size: 40px;
+    text-shadow: 1px 1px 1px rgba(0,0,0, 0.5);
+    animation: animate 4s linear infinite;
+  }
+  input {
+    width: 115px;
+    margin: 0 0 15px;
+  }
+  .buttons {
+    button:first-child{
+      margin-right: 10px;
+    }
+  }
+}
+@keyframes animate
+{
+  0%
+  {
+    color: #f40303;
+  }
+  25%
+  {
+    color: #e069ad;
+  }
+  75%
+  {
+    color: #9259ff;
+  }
+  100%
+  {
+    color: #f40303;
+  }
+}

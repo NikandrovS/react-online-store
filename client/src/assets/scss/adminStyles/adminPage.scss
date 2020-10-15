@@ -1,0 +1,68 @@
+@import "orders";
+@import "products";
+@import "admin-login";
+.adminPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  font-family: ProbaPro, sans-serif;
+  header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+  }
+  .logo {
+    min-width: 210px;
+    font-size: 30px;
+    font-family: "EuroStileExtended", sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  .mobile-logo {
+    img {
+      height: 30px;
+      width: 30px;
+    }
+  }
+  ul {
+    list-style-type: none;
+    padding: 0;
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+.admin-nav {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  margin: 8px;
+}
+.userbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+  p {
+    margin: 0 10px 0 0;
+    cursor: default;
+  }
+  span {
+    cursor: pointer;
+    &:hover {
+      color: grey;
+    }
+  }
+}
+@media  (max-width: 320px) {
+  .adminPage {
+    header {
+      width: 94%;
+      padding: 0 3%;
+    }
+  }
+}

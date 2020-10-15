@@ -1,0 +1,90 @@
+.order-details {
+  font-size: 14px;
+}
+input[type=radio] {
+   margin: 0 10px;
+}
+.form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.order-details {
+  display: flex;
+  flex-direction: column;
+}
+.form-column {
+  display: flex;
+  flex-direction: column;
+  width: 27%;
+  input {
+    margin-bottom: 15px;
+  }
+  input,textarea {
+    letter-spacing: 0.5px;
+    border: none;
+    outline: none;
+    padding: 10px 0;
+    border-bottom: 1px solid black;
+    font-size: 11px;
+    &::placeholder {
+      color: black;
+    }
+  }
+  textarea {
+    font-size: 12px;
+    resize: none;
+    padding-bottom: 10px;
+    font-family: ProbaPro, sans-serif;
+  }
+}
+.form-column:last-child {
+  justify-content: space-between;
+}
+.deliveryChoice {
+  margin-bottom: 25px;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    li {
+      display: flex;
+      align-items: center;
+      &:hover {
+        background-color: #f5f5f5;
+      }
+    }
+    label {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-left: 5px;
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+}
+.display-error {
+  text-align: center;
+}
+
+//Hide Arrows From Input Number
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media  (max-width: 480px) {
+  .userForm {
+    width: 90%;
+  }
+  .deliveryChoice {
+    margin-bottom: 0;
+  }
+  textarea {
+    margin-bottom: 40px;
+  }
+}

@@ -1,0 +1,13 @@
+doctype html
+html
+    head
+        meta(charset="utf8")
+        title TOP LINE
+        link(rel="stylesheet", href="css/app.css", data-inline)
+    body
+        div.email
+            p.mail-body Your order №#{order} has been sent by #{delivery}
+            p.mail-body You can track it on&nbsp;
+                a(href=`${link}#${track}` target="blank") #{link}
+                span  with tracknumber: #{track}
+            p.warning Please do not reply this mail
